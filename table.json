@@ -1,0 +1,107 @@
+[
+  [
+    {
+      "name": "H",
+      "name_long": "Водород",
+      "number": 1,
+      "m": 1.008,
+      "type": "Неметаллы",
+      "energy": "1, 2",
+      "created": "1766",
+      "link": "https://wikipedia.com/",
+      "theme": "Я хз что здесь"
+    },
+    {
+      "name": "",
+      "name_long": "",
+      "number": "",
+      "m": ""
+    },
+    {
+      "name": "",
+      "name_long": "",
+      "number": "",
+      "m": ""
+    },
+    {
+      "name": "",
+      "name_long": "",
+      "number": "",
+      "m": ""
+    },
+    {
+      "name": "",
+      "name_long": "",
+      "number": "",
+      "m": ""
+    },
+    {
+      "name": "",
+      "name_long": "",
+      "number": "",
+      "m": ""
+    },
+    {
+      "name": "",
+      "name_long": "",
+      "number": "",
+      "m": ""
+    },
+    {
+      "name": "He",
+      "name_long": "Гелий",
+      "number": 2,
+      "m": 4.0026
+    }
+  ],
+  [
+    {
+      "name": "Li",
+      "name_long": "Литий",
+      "number": 3,
+      "m": 6.94
+    },
+    {
+      "name": "Be",
+      "name_long": "Бериллий",
+      "number": 4,
+      "m": 1.008
+    },
+    {
+      "name": "B",
+      "name_long": "Бор",
+      "number": 5,
+      "m": 10.81
+    },
+    {
+      "name": "C",
+      "name_long": "Углерод",
+      "number": 6,
+      "m": 12.011
+    },
+    {
+      "name": "N",
+      "name_long": "Азот",
+      "number": 7,
+      "m": 14.007
+    },
+    {
+      "name": "O",
+      "name_long": "Кислород",
+      "number": 8,
+      "m": 15.999
+    },
+    {
+      "name": "F",
+      "name_long": "Фтор",
+      "number": 9,
+      "m": 18.998
+    },
+    {
+      "name": "Ne",
+      "name_long": "Неон",
+      "number": 10,
+      "m": 20.180
+    }
+  ]
+]
