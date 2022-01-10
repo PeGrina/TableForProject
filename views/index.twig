@@ -4,7 +4,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2">
-                <div id="Element">
+                <div class="card" style="width: 10rem;">
+                    <div class="card-body" id="Element">
+
+                    </div>
+                </div>
+                <div id="Element2">
 
                 </div>
             </div>
@@ -38,10 +43,22 @@
     <script>
         const table = JSON.parse('{{ json }}');
         const gen = (s) => {
-            return `<h3><span>${s.number}</span></h3>
-            <h2>${s.name}</h2>
-            <h6>${s.name_long}</h6>
-            <span>${s.m}</span>
+            return `
+ <div class="row justify-content-center">
+    <div class="col-10">
+        <h3><span>${s.number}</span></h3>
+        <h2>${s.name}</h2>
+        <h6>${s.name_long}</h6>
+        <span>${s.m}</span>
+    </div>
+    <div class="col-1">
+      ${s.electoron.join(' ')}
+    </div>
+  </div>
+            `;
+        }
+        const gen2 = (s) => {
+            return `
             <div style="font-size: 16px;">
                 <div>Серии - ${s.type}</div>
                 <div>Энергетические уровни - ${s.energy}</div>
@@ -50,14 +67,19 @@
                 <div>Открыли - ${s.created}</div>
             </div>`;
         }
+        const edit = (i) => {
+            j = table[i];
+            $('#Element').html(gen(j));
+            $('#Element2').html(gen2(j));
+        }
         for (let i = 1; i <= Object.keys(table).length; ++i) {
             let j = table[i];
             $(`#el${i}`).click(() => {
-                $('#Element').html(gen(j));
-            })
+                edit(i);
+            });
         }
         $('body').ready(() => {
-            $('#Element').html(table[1]);
+            edit(1);
         });
     </script>
 {% endblock %}
