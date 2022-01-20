@@ -18,8 +18,6 @@ for (let i = 0; i < t.length; ++i) {
     }
 }
 
-console.log(ts);
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { table: ts, periods, json: JSON.stringify(js) });

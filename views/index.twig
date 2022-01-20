@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2">
-                <div class="card" style="width: 10rem; color:white;" id="card3">
+                <div class="card" style="left: 2.5rem; top: 1rem; width: 10rem; color:white;" id="card3">
                     <div class="card-body" id="Element">
 
                     </div>
@@ -59,13 +59,72 @@
         }
         const gen2 = (s) => {
             return `
-            <div style="font-size: 16px;">
+<br>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Химические свойства
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div style="font-size: 16px;">
                 <div>Серии - ${s.type}</div>
                 <div>Энергетические уровни - ${s.energy}</div>
                 <div>Тема раздела - ${s.theme}</div>
+            </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        История элемента
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div style="font-size: 16px;">
+                <div>Открыт - ${s.created}</div>
+                <div>Кем открыт - todo</div>
+            </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Интересные факты об элементе
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div style="font-size: 16px;">
+                <div>Я гей</div>
+            </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Использование в повседневной жизни и технология производства
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div style="font-size: 16px;">
+                <div>где используется и кем</div>
+            </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        Википедия
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+      <div style="font-size: 16px;">
                 <div><a href="${s.link}">Ссылка на википедии</a></div>
-                <div>Открыли - ${s.created}</div>
-            </div>`;
+     </div>
+    </div>
+  </div>
+       `;
         }
         const edit = (i) => {
             j = table[i];
